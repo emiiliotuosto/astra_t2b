@@ -16,7 +16,7 @@ The approaches studies for the verification and validation of systems can be bro
 
 The following methods can be ascribed to the first category since they are based on behavioural specification:
 
-- The work initiated by Tuosto in [1,2] has further been developed in a collaboration the SME Actyx (Germany) and with DTU (Denmark); in the context of the TARDIS EU project involving Actyx and DTU, the team is developing a compositional framework for swarm computation based on the work carried out in [1,2]. The approach currently explored is to specify composition mechanisms of swarm protocols that preserve eventual consistency of systems using a generalisation of the conditions found [1].
+- The work initiated by Tuosto in [1,2] has further been developed within a collaboration involving the SME Actyx (Germany) and DTU (Denmark); in the context of the TARDIS EU project involving Actyx and DTU, the team is developing a compositional framework for swarm computation based on the work carried out in [1,2]. The approach currently explored is to specify composition mechanisms of swarm protocols that preserve eventual consistency of systems using a generalisation of the conditions found [1].
 
 - The work on model-driven testing RESTful APIs described in Deliverable M2.B.1 has been published in [3]. Besides the prototype implementation the paper provides an extensive validation of the approach by considering publicly available application taken from software repositories. The paper also shows the advantages of the approaches on state-of-the-art competitors.
 
