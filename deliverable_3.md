@@ -24,13 +24,13 @@ The following methods can be ascribed to the first category since they are based
 
 - A bounded model-checking algorithm for Quality of Service properties of distributed communicating components based on a dynamic temporal logic indexed by choreographic specifications has been published in [5] (best paper award). A related tool paper has been accepted at FM 2024.
 
-- An infrastructure for dynamic semantic-based search and binding of distributed communicating components has been published in [6]. The infrastructure use a notion of compliance based on bisumulation and support multilanguage programming allowing to compose components developed in Python, Java, and Go.
-
 The following methods can be ascribed to the software-base category:
 
 - Inverso, Sales, and Tuosto refined the initial prototype for data race detection in multi-threaded C programs. The tool has been validated on benchmarks found in the literature. The team has also designed a more specific set of benchmarks. These results, which will appear at FM 2024 confirm that the approach covers cases that competing tools cannot handle and that the method rules out false positives and negatives within the given bounds.
 
 - In collaboration with DTU (Denmark), KTH (Sweden), and UBA (Argentina), Tuosto has tackled the problem of embedding _join patterns_ [7] in an actor-based programming language. The team has considered, in particular, how to specify a suitable notion of message matching, how to implement it correctly and efficiently, and how to systematically evaluate the implementation performance. The initial results are (i) a formalisation of a notion of _fair and deterministic join pattern matching_, (ii) a stateful, tree-based  algorithm to find such matches, and (iii) a Scala library allowing programmers to use the fair deterministic join pattern matching in concurrent and distributed Scala programs.
+
+- An infrastructure for dynamic semantic-based search and binding of distributed communicating components has been published in [6]. The infrastructure use a notion of compliance based on bisumulation and support multilanguage programming allowing to compose components developed in Python, Java, and Go.
 
 
 ## Techniques for AI software for space
