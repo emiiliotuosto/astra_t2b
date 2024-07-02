@@ -35,6 +35,19 @@ The following methods can be ascribed to the software-base category:
 
 ## Techniques for AI software for space
 
+- FBK continued the research and development of VIVAS, 
+  a framework for the simulation-based Verification and Validation (V&V) of 
+  autonomous systems with AI components using a methodology based on 
+  a combination of Model Checking, coverage-based testing, simulation,
+  and runtime monitoring [8].
+  The framework has been originally applied to the analysis 
+  of an autonomous rover for planetary exploration, 
+  based on an accurate simulator for space applications [8],
+  and then subsequently generalised to the automotive domain, 
+  for the validation of agents for autonomous driving [9].
+  Finally, the framework has been recently extended with a contract-based
+  methodology in order to better identify the causes for system failures [10].
+
 
 # References
 [1] R. Kuhn, H. C. Melgratti, E. Tuosto. Behavioural Types for Local-First Software. ECOOP 2023: 15:1-15:28
@@ -50,3 +63,9 @@ The following methods can be ascribed to the software-base category:
 [6] C. Fournet and G. Gonthier. The Reflexive CHAM and the Join-Calculus. PoPL 1996
 
 [7] C. G. López Pombo, P. Montepagano, E. Tuosto. SEArch: An Execution Infrastructure for Service-Based Software Systems. COORDINATION 2024: 314-330
+
+[8] S. Fratini, P. Fleith, N. Policella, A. Griggio, S. Tonetta, S. Goyal, T. T. H. Le, J. Kimblad, C. Tian, K. Kapellos, C. Tranoris, Q. Wijnands. Verification and Validation of Autonomous Systems. ASTRA 2023.
+
+[9] S. Goyal, A. Griggio, S. Tonetta. System-level Simulation-based Verification of Autonomous Driving Systems with the VIVAS Framework and CARLA Simulator. Submitted to the special issue "Advances in Formal Methods for Autonomous Systems" of Science of Computer Programming, 2024.
+
+[10] S. Goyal, A. Griggio, S. Tonetta. Leveraging Contracts for Failure Monitoring and Identification in Automated Driving Systems. Under review, 2024.
