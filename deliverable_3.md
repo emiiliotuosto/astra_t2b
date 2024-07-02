@@ -16,7 +16,7 @@ The approaches studies for the verification and validation of systems can be bro
 
 The following methods can be ascribed to the first category since they are based on behavioural specification:
 
-- The work initiated by Tuosto in [1,2] has further been developed within a collaboration involving the SME Actyx (Germany) and DTU (Denmark); in the context of the TARDIS EU project involving Actyx and DTU, the team is developing a compositional framework for swarm computation based on the work carried out in [1,2]. The approach currently explored is to specify composition mechanisms of swarm protocols that preserve eventual consistency of systems using a generalisation of the conditions found [1].
+- The work on swarm computing initiated at GSSI [1,2] has further been developed within a collaboration involving the SME Actyx (Germany) and DTU (Denmark); in the context of the TARDIS EU project involving Actyx and DTU, the team is developing a compositional framework for swarm computation based on the work carried out in [1,2]. The approach currently explored is to specify composition mechanisms of swarm protocols that preserve eventual consistency of systems using a generalisation of the conditions found [1].
 
 - The work on model-driven testing RESTful APIs described in Deliverable M2.B.1 has been published in [3]. Besides the prototype implementation the paper provides an extensive validation of the approach by considering publicly available application taken from software repositories. The paper also shows the advantages of the approaches on state-of-the-art competitors.
 
@@ -26,27 +26,28 @@ The following methods can be ascribed to the first category since they are based
 
 The following methods can be ascribed to the software-base category:
 
-- Inverso, Sales, and Tuosto refined the initial prototype for data race detection in multi-threaded C programs. The tool has been validated on benchmarks found in the literature. The team has also designed a more specific set of benchmarks. These results, which will appear at FM 2024 confirm that the approach covers cases that competing tools cannot handle and that the method rules out false positives and negatives within the given bounds.
+- GSSI refined the initial prototype for data race detection in multi-threaded C programs. The tool has been validated on benchmarks found in the literature. The team has also designed a more specific set of benchmarks. These results, which will appear at FM 2024 confirm that the approach covers cases that competing tools cannot handle and that the method rules out false positives and negatives within the given bounds.
 
-- In collaboration with DTU (Denmark), KTH (Sweden), and UBA (Argentina), Tuosto has tackled the problem of embedding _join patterns_ [6] in an actor-based programming language. The team has considered, in particular, how to specify a suitable notion of message matching, how to implement it correctly and efficiently, and how to systematically evaluate the implementation performance. The initial results are (i) a formalisation of a notion of _fair and deterministic join pattern matching_, (ii) a stateful, tree-based  algorithm to find such matches, and (iii) a Scala library allowing programmers to use the fair deterministic join pattern matching in concurrent and distributed Scala programs.
+- In collaboration with DTU (Denmark), KTH (Sweden), and UBA (Argentina), GSSI has tackled the problem of embedding _join patterns_ [6] in an actor-based programming language. The team has considered, in particular, how to specify a suitable notion of message matching, how to implement it correctly and efficiently, and how to systematically evaluate the implementation performance. The initial results are (i) a formalisation of a notion of _fair and deterministic join pattern matching_, (ii) a stateful, tree-based  algorithm to find such matches, and (iii) a Scala library allowing programmers to use the fair deterministic join pattern matching in concurrent and distributed Scala programs.
 
 - An infrastructure for dynamic semantic-based search and binding of distributed communicating components has been published in [7]. The infrastructure use a notion of compliance based on bisumulation and support multilanguage programming allowing to compose components developed in Python, Java, and Go.
+
+- GSSI, in collaboration with the Politecnico of Milano, has contributed to a modular approach to analyse the quality of service of different software design models, thus bridging the gap between multiple model abstractions, see [11].
+
+- GSSI, in collaboration with the University of Auckland, has contributed to the model-based verification of adversarial conditions by means of design patterns that support the control and reconfiguration of software tasks, see [12].
+
 
 
 ## Techniques for AI software for space
 
-- FBK continued the research and development of VIVAS, 
-  a framework for the simulation-based Verification and Validation (V&V) of 
-  autonomous systems with AI components using a methodology based on 
-  a combination of Model Checking, coverage-based testing, simulation,
-  and runtime monitoring [8].
-  The framework has been originally applied to the analysis 
-  of an autonomous rover for planetary exploration, 
-  based on an accurate simulator for space applications [8],
-  and then subsequently generalised to the automotive domain, 
-  for the validation of agents for autonomous driving [9].
-  Finally, the framework has been recently extended with a contract-based
-  methodology in order to better identify the causes for system failures [10].
+- FBK continued the research and development of VIVAS, a framework for the simulation-based Verification and Validation (V&V) of autonomous systems with AI components using a methodology based on a combination of Model Checking, coverage-based testing, simulation, and runtime monitoring [8]. The framework has been originally applied to the analysis of an autonomous rover for planetary exploration, based on an accurate simulator for space applications [8], and then subsequently generalised to the automotive domain, for the validation of agents for autonomous driving [9]. Finally, the framework has been recently extended with a contract-based methodology in order to better identify the causes for system failures [10].
+
+- GSSI has contributed to the development of a discrete-event simulator to analyse multiple coordination mechanisms among agents, thus optimising the scheduling of software tasks, see [13]. 
+
+- GSSI, in collaboration with University of Milano-Bicocca, has contributed to the development of a framework for detecting software antipatterns in java programs, thus supporting the early detection of performance issues, see [14].
+
+- GSSI, in collaboration with Politecnico of Milano and IMT Lucca, has contributed to the development of autoscaling solutions to efficiently manage system requests, thus improving the energy consumption of cloud resources, see [15].
+
 
 
 # References
@@ -69,3 +70,15 @@ The following methods can be ascribed to the software-base category:
 [9] S. Goyal, A. Griggio, S. Tonetta. System-level Simulation-based Verification of Autonomous Driving Systems with the VIVAS Framework and CARLA Simulator. Submitted to the special issue "Advances in Formal Methods for Autonomous Systems" of Science of Computer Programming, 2024.
 
 [10] S. Goyal, A. Griggio, S. Tonetta. Leveraging Contracts for Failure Monitoring and Identification in Automated Driving Systems. Under review, 2024.
+
+
+[11] Riccardo Pinciroli, Raffaela Mirandola, Catia Trubiani: Modular Quality-of-Service Analysis of Software Design Models for Cyber-Physical Systems. International Conference on Advanced Information Systems Engineering (CAiSE), 88-104, 2023. 
+
+
+[12] Kenneth Johnson, Samaneh Madanian, Catia Trubiani "Patterns of Applied Control for Public Health Measures on Transportation Services under Epidemic", in International Conference on Software Engineering for Adaptive and Self-Managing Systems (SEAMS), 150-160, 2024.
+
+[13] Riccardo Pinciroli, Catia Trubiani: Performance Analysis of Fault-Tolerant Multiagent Coordination Mechanisms. IEEE Trans. Ind. Informatics 19(9): 9821-9832 (2023).
+
+[14] Catia Trubiani, Riccardo Pinciroli, Andrea Biaggi, Francesca Arcelli Fontana: Automated Detection of Software Performance Antipatterns in Java-Based Applications. IEEE Trans. Software Eng. 49(4): 2873-2891 (2023).
+
+[15] Giovanni Quattrocchi, Emilio Incerto, Riccardo Pinciroli, Catia Trubiani, Luciano Baresi: Autoscaling Solutions for Cloud Applications Under Dynamic Workloads. IEEE Trans. Serv. Comput. 17(3): 804-820 (2024).
